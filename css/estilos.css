@@ -1,0 +1,234 @@
+
+#inicio{
+    background-image: url(../img/9ceda3ea-1311-485b-a225-f2ea9ef1c8e3.jpg);
+    opacity: 0.8;
+    min-height: 50vh;
+    padding: 0;
+    margin-top: 0px;
+}
+.logo{
+    border-radius: 100%;
+    width: 20vh;
+    margin-right: 18vh;
+}
+.container-fluid{
+    background-color: #f5ebe0;
+    font-family: "poppins";
+}
+.navbar-nav{
+    gap: 85px;
+    text-align: center;
+}
+.titulo{
+    font-family: "poppins";
+    font-size: 8vh;
+    color: #0b090a;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 5px;
+}
+.subtitulo{
+    font-family: "poppins";
+    font-size: 4vh;
+    color: #0b090a;
+    text-align: center;
+}
+h1:hover{
+    font-size: 9vh;
+    color: #333;
+}
+h2:hover{
+    color: #333;
+    font-size: 4vh;
+}
+#nosotros, #servicios , #contacto ,#cotizatuevento{
+    font-family: "poppins";
+    font-size: 3vh;
+    text-align: center;
+    background-color:#f5ebe0;
+    padding: 30px;
+}
+.texto{
+    margin: 5vh;
+    font-family: "poppins";
+    padding: 3vh;
+    font-size: 2.5vh;
+    background-image: linear-gradient(to right,#333, #f5ebe0);
+    background-clip: text;
+    -webkit-background-clip: text;
+    border: 3px solid transparent;
+    border-radius: 5px;
+    display: inline-block;
+    position: relative;
+    animation: border-appear 2s ease-in-out forwards;
+}
+@keyframes border-appear {
+    0% {
+        border-color: transparent; /* El borde empieza invisible */
+    }
+    100% {
+        border-color: #333; /* El borde se vuelve visible con el color deseado */
+    }
+}
+
+.subsubtitulo{
+    font-family: "poppins"; 
+    font-size: 7vh;
+    font-style: oblique;
+    color:  #333;
+}
+.foto{
+    width: 100%;
+    max-width: 22vh;
+    height: auto;
+    border-radius: 20%;
+    opacity: 0;
+    animation: fadeIn 3s ease-out forwards;
+  }
+  @keyframes fadeIn {
+    to {
+      opacity: 1;
+    }
+    
+  }
+.container-nosotros{
+    display: flex;
+    justify-content:space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding:20px;
+
+    
+}
+.card-text{
+    font-size: 1.9vh;
+}
+
+.card{
+    margin: 1.5vh;
+}
+.card-img-top{
+    height: 250px;
+}
+.container-contacto{
+    display: flex;
+    justify-content:space-between;
+    gap: 30px;
+    margin-top: 15vh;
+    
+}
+.container-contacto > div{
+    flex:1
+}
+form {
+    display: flex;
+    flex-direction: column; 
+    margin: 10vh;
+}
+.formulario{
+    border: solid #333;
+    border-radius: 20px;
+}
+form label, form input, form textarea {
+    margin-bottom: 10px; 
+}
+
+form button {
+    width: 150px; 
+    padding: 10px;
+    text-align: center;
+}
+.container-button{
+    display: flex;
+  justify-content: center; 
+  align-items: center; 
+  margin: 8vh;
+}
+.telefono .mail .horarios{
+    display: flex;
+    align-items: center;
+}
+.telefono p, .mail p, .horarios p, .ubicacion p , .instagram p{
+    margin:0;
+    font-weight: bold;
+    margin-right: 10px;
+    padding:20px;
+}
+h4{
+    padding: 3vh;
+}
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.footer-left p {
+    margin: 0;
+}
+
+.footer-right ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 20px;
+}
+
+.footer-right ul li {
+    display: inline;
+}
+
+.footer-right a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.footer-right a:hover {
+    text-decoration: underline;
+}
+
+.social-media {
+    margin-top: 10px;
+}
+
+.social-icon {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 18px;
+}
+
+.social-icon:hover {
+    text-decoration: underline;
+}
+.whatsapp-button {
+    position: fixed;
+    bottom: 20px; /* Distancia desde la parte inferior de la página */
+    right: 20px; /* Distancia desde la parte derecha de la página */
+    z-index: 9999; /* Asegura que el botón esté encima de otros elementos */
+    background-color: #25d366; /* Color verde de WhatsApp */
+    border-radius: 50%; /* Hace que el ícono sea circular */
+    padding: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para dar profundidad */
+}
+
+.whatsapp-button img {
+    width: 50px; /* Tamaño del ícono de WhatsApp */
+    height: 50px; /* Tamaño del ícono de WhatsApp */
+    border-radius: 50%; /* Hace que la imagen tenga bordes redondeados */
+}
+
+.whatsapp-button:hover {
+    background-color: #128C7E; /* Cambia el color cuando el usuario pasa el mouse sobre el botón */
+    opacity: 0.9; /* Efecto de opacidad */
+}
